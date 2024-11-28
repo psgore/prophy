@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSG Prophy</title>
+    <style>
+        /* Reset some default styling */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styles for body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Position navbar in the top-right corner */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed; /* Fix to the top-right corner */
+            top: 10px;
+            right: -200px; /* Initially hidden off-screen */
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            transition: right 0.3s ease-out; /* Smooth transition */
+        }
+
+        /* Navbar list styling */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Navbar item styling */
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        /* Navbar link styling */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+            display: inline-block;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover effect for links */
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Button styling for toggling navbar */
+        .nav-toggle-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            position: fixed;
+            top: 10px;
+            right: 10px; /* Button in the top-right corner */
+            border-radius: 4px;
+        }
+
+        /* Hover effect for button */
+        .nav-toggle-btn:hover {
+            background-color: #555;
+        }
+
+        /* Media Query for mobile responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <P></P>
+    <button class="nav-toggle-btn" onclick="toggleNav()">|||</button>
+</div>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">1st PU</a></li>
+            <li><a href="#">2nd PU</a></li>
+            <li><a href="#">JEE</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript to toggle the visibility of the navbar
+        function toggleNav() {
+            const navbar = document.getElementById('navbar');
+            // Slide in/out from the right
+            navbar.style.right = (navbar.style.right === '0px') ? '-200px' : '0px';
+        }
+    </script>
+
+</body>
+</html>
