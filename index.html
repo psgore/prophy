@@ -15,103 +15,68 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
             overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
-        /* Position navbar in the top-right corner */
-        nav {
-            background-color: #333;
-            padding: 10px 0;
-            position: fixed; /* Fix to the top-right corner */
-            top: 10px;
-            right: -200px; /* Initially hidden off-screen */
-            width: 200px;
+        /* Button container to align buttons properly */
+        .button-container {
             display: flex;
             flex-direction: column;
-            transition: right 0.3s ease-out; /* Smooth transition */
+            gap: 15px; /* Space between buttons */
         }
+.welcome-box {
+            background-color: #fff;
+            padding: 30px 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            border: 1px solid #ddd;
+}
+        
 
-        /* Navbar list styling */
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
-
-        /* Navbar item styling */
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        /* Navbar link styling */
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 8px 15px;
-            display: inline-block;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        /* Hover effect for links */
-        nav ul li a:hover {
-            background-color: #555;
-        }
-
-        /* Button styling for toggling navbar */
-        .nav-toggle-btn {
+        /* Button styling */
+        .button-container button {
             background-color: #333;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 18px;
             border: none;
             cursor: pointer;
-            position: fixed;
-            top: 10px;
-            right: 10px; /* Button in the top-right corner */
             border-radius: 4px;
+            transition: background-color 0.3s ease;
+            width: 400px; /* Fixed width */
         }
 
-        /* Hover effect for button */
-        .nav-toggle-btn:hover {
+        /* Hover effect for buttons */
+        .button-container button:hover {
             background-color: #555;
         }
 
         /* Media Query for mobile responsiveness */
         @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li {
-                margin: 10px 0;
+            .button-container {
+                align-items: center;
             }
         }
     </style>
+<div class=""welcome-box></div>
+<div class="welcome-box">
+    <h1>Welcome to PSG Prophy!</h1>
+
 </head>
 <body>
-<div>
-    <P></P>
-    <button class="nav-toggle-btn" onclick="toggleNav()">|||</button>
-</div>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#">1st PU</a></li>
-            <li><a href="#">2nd PU</a></li>
-            <li><a href="#">JEE</a></li>
-        </ul>
-    </nav>
-
-    <script>
-        // JavaScript to toggle the visibility of the navbar
-        function toggleNav() {
-            const navbar = document.getElementById('navbar');
-            // Slide in/out from the right
-            navbar.style.right = (navbar.style.right === '0px') ? '-200px' : '0px';
-        }
-    </script>
+    <div class="button-container">
+        <button onclick="location.href='1pu.html'">1st PU</button>
+        <button onclick="location.href='2pu.html'">2nd PU</button>
+        <button onclick="location.href='jee.html'">JEE</button>
+    </div>
 
 </body>
 </html>
