@@ -24,6 +24,46 @@
       font-size: 2rem;
       color: #333;
     }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+        header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+        h1 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #fff; /* Text color */
+      text-align: center;
+      background-color: #007bff; /* Background color */
+      padding: 1rem; /* Padding for better spacing */
+      border-radius: 5px; /* Optional: rounded corners */
+    }
 
     .btn {
       display: inline-block;
@@ -67,11 +107,33 @@
   </style>
 </head>
 <body>
+<div>
+  <div>
+    <h1>Pro Phy</h1>
+  </div>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="dash1.html">Board Exam Notes</a></li>
+        <li><a href="#jee-notes">JEE Notes</a></li>
+        <li><a href="#neet-notes">NEET Notes</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contribution.html">Contribute</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
   <div class="container">
-    <h1>Select Your PU Level</h1>
+    <header>
+    <h2>Select Your PU Level</h2>
+    </header>
     <div><a href="1pu.html" class="btn">1 PU</a></div>
     <div><a href="2pu.html" class="btn">2 PU</a></div>
     <div><a href="index.html" class="back-btn">Back</a></div> <!-- Back button -->
+  </div>
   </div>
 </body>
 </html>
