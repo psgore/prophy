@@ -4,101 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contribute</title>
-   <style>
-     .back-button {
+    <style>
+        .back-button {
             margin-top: 20px;
             padding: 10px 15px;
             background: linear-gradient(to right, #6dd5ed, #081174);
-            /* Same gradient as body */
             color: white;
             border-radius: 5px;
             border: none;
             cursor: pointer;
             text-align: center;
             transition: opacity 0.3s, transform 0.3s;
-            /* Animation effects */
             width: 100%;
-            /* Set width to 100% */
             max-width: 200px;
-            /* Max-width for the back button */
             margin-left: auto;
-            /* Center align */
             margin-right: auto;
-            /* Center align */
             font-size: 0.9em;
-            /* Slightly smaller font size for back button */
         }
 
         .back-button:hover {
             opacity: 0.8;
-            /* Slightly transparent on hover */
             transform: scale(1.05);
-            /* Slightly enlarge on hover */
         }
+
         header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    header .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
 
         header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    header nav ul li a:hover {
-      text-decoration: underline;
-    }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
         h1 {
-      margin-bottom: 2rem;
-      font-size: 2rem;
-      color: #fff; /* Text color */
-      text-align: center;
-      background-color: #007bff; /* Background color */
-      padding: 1rem; /* Padding for better spacing */
-      border-radius: 5px; /* Optional: rounded corners */
-    }
-   </style> 
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            background-color: #007bff;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .qr-label {
+            font-size: 1.2em;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .upi-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 300px;
+        }
+
+        .upi-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div>
         <h1>Pro Phy</h1>
-      </div>
-      <!-- Header Section -->
-      <header>
+    </div>
+    <!-- Header Section -->
+    <header>
         <nav>
-          <ul>
-            <li><a href="dash1.html">Board Exam Notes</a></li>
-            <li><a href="#jeeneet">JEE/NEET</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
-            <li><a href="aboutme.html">About Us</a></li>
-            <li><a href="contribution.html">Contribute</a></li>
-          </ul>
+            <ul>
+                <li><a href="dash1.html">Board Exam Notes</a></li>
+                <li><a href="#jeeneet">JEE/NEET</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="aboutme.html">About Us</a></li>
+                <li><a href="contribution.html">Contribute</a></li>
+            </ul>
         </nav>
-        </header>
-    <img src="qr.jpg" height="400" width="400">
-    <div><a href="upi://pay?pa=9482499779@upi&pn=Goresuhas" target="_blank">Pay via UPI</a>
-</div>
-   <button class="back-button" onclick="goBack()">BACK</button>
-    <script> function goBack() {
-        window.location.href = 'index.html'; // Navigate back to index.html
-    }
-</script>
+    </header>
+    <!-- Content Section -->
+    <div class="content">
+        <p class="qr-label">contribute via UPI:</p>
+        <a href="upi://pay?pa=9482499779@upi&pn=Goresuhas" target="_blank" class="upi-link">contribute via UPI</a>
+   
+        <p class="qr-label">OR Scan the QR code to contribute:</p>
+        <img src="qr.jpg" alt="QR Code for UPI Payment" height="400" width="400">
+        <br>
+
+        <a href="upi://pay?pa=9482499779@upi&pn=Goresuhas" target="_blank" class="upi-link">Pay via UPI</a>
+    </div>    
+</body>
 </html>
