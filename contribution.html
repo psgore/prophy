@@ -35,13 +35,69 @@
             transform: scale(1.05);
             /* Slightly enlarge on hover */
         }
+        header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+        header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+        h1 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #fff; /* Text color */
+      text-align: center;
+      background-color: #007bff; /* Background color */
+      padding: 1rem; /* Padding for better spacing */
+      border-radius: 5px; /* Optional: rounded corners */
+    }
    </style> 
 </head>
 <body>
+    <div>
+        <h1>Pro Phy</h1>
+      </div>
+      <!-- Header Section -->
+      <header>
+        <nav>
+          <ul>
+            <li><a href="dash1.html">Board Exam Notes</a></li>
+            <li><a href="#jee-notes">JEE Notes</a></li>
+            <li><a href="#neet-notes">NEET Notes</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contribution.html">Contribute</a></li>
+          </ul>
+        </nav>
+        </header>
     <img src="qr.jpg" height="400" width="400">
-    <h1>9482499779@upi</h1>
-</body>
-<button class="back-button" onclick="goBack()">BACK</button>
+    <div><a href="upi://pay?pa=9482499779@upi&pn=Goresuhas" target="_blank">Pay via UPI</a>
+</div>
+   <button class="back-button" onclick="goBack()">BACK</button>
     <script> function goBack() {
         window.location.href = 'index.html'; // Navigate back to index.html
     }
