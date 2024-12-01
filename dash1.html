@@ -1,100 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PU Physics Notes</title>
   <style>
     .back-button {
-        margin-top: 20px;
-        padding: 10px 15px;
-        background: linear-gradient(to right, #6dd5ed, #081174);
-        color: white;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        transition: opacity 0.3s, transform 0.3s;
-        width: 100%;
-        max-width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 0.9em;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: linear-gradient(to right, #6dd5ed, #081174);
+      color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: opacity 0.3s, transform 0.3s;
+      width: 100%;
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.9em;
     }
 
     .back-button:hover {
-        opacity: 0.8;
-        transform: scale(1.05);
+      opacity: 0.8;
+      transform: scale(1.05);
     }
 
     header {
-        background: #222;
-        color: #fff;
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     header .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
 
     header nav ul {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        margin: 0;
-        padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
     }
 
     header nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     header nav ul li a:hover {
-        text-decoration: underline;
+      text-decoration: underline;
     }
 
     h1 {
       margin-bottom: 2rem;
       font-size: 2rem;
-      color: #fff; /* Text color */
+      color: #fff;
+      /* Text color */
       text-align: center;
-      background-color: #007bff; /* Background color */
-      padding: 1rem; /* Padding for better spacing */
-      border-radius: 5px; /* Optional: rounded corners */
+      background-color: #007bff;
+      /* Background color */
+      padding: 1rem;
+      /* Padding for better spacing */
+      border-radius: 5px;
+      /* Optional: rounded corners */
     }
 
-    .btn, .back-btn {
-    display: block; /* Ensures block-level alignment */
-    margin: 1rem auto; /* Centers the button horizontally */
-    padding: 1.5rem 3rem;
-    font-size: 1.5rem;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-    width: 200px; /* Button width */
-    text-align: center; /* Center the text inside the button */
-}
+    .btn,
+    .back-btn {
+      display: block;
+      /* Ensures block-level alignment */
+      margin: 1rem auto;
+      /* Centers the button horizontally */
+      padding: 1.5rem 3rem;
+      font-size: 1.5rem;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+      width: 200px;
+      /* Button width */
+      text-align: center;
+      /* Center the text inside the button */
+    }
 
-.back-btn {
-    background: #6c757d; /* Different color for back button */
-}
+    .back-btn {
+      background: #6c757d;
+      /* Different color for back button */
+    }
 
-.btn:hover, .back-btn:hover {
-    background: #0056b3; /* Change hover color */
-}
+    .btn:hover,
+    .back-btn:hover {
+      background: #0056b3;
+      /* Change hover color */
+    }
 
 
     .back-btn {
       display: inline-block;
-      position:absolute ;
+      position: absolute;
       left: 10px;
       margin-top: 1rem;
       padding: 1rem 2rem;
@@ -104,10 +117,12 @@
       text-decoration: none;
       border-radius: 5px;
       transition: background 0.3s;
-      width: 25px; /* Same width as other buttons */
+      width: 25px;
+      /* Same width as other buttons */
       height: vh;
-      text-align:center;
+      text-align: center;
     }
+
     footer {
       background: #ffffff;
       color: #000000;
@@ -120,40 +135,49 @@
       color: #007bff;
       text-decoration: none;
     }
+
     .back-btn:hover {
       background: #5a6268;
     }
+
+    .white-link {
+      color: white;
+      text-decoration: none;
+      /* Removes underline */
+    }
   </style>
 </head>
+
 <body>
-<div>
   <div>
-    <h1>Pro Phy</h1>
-  </div>
-  <!-- Header Section -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="dash1.html">Board Exam Notes</a></li>
-        <li><a href="ytu.html">JEE NEET</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contribution.html">Contribute</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div>
+      <h1><a href="index.html" class="white-link">Pro Phy</a></h1>
+    </div>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="dash1.html">Board Exam Notes</a></li>
+          <li><a href="ytu.html">JEE NEET</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="contribution.html">Contribute</a></li>
+        </ul>
+      </nav>
+    </header>
 
 
-  <div class="container">
-    <div><a href="1pu.html" class="btn">1 PU</a></div>
-    <div><a href="2pu.html" class="btn">2 PU</a></div>
-    <div><a href="index.html" class="back-btn">Back</a></div> <!-- Back button -->
-  </div>
-  
-  <div>
-  <footer>
-    <p>&copy; 2024 ProPhy</p>
-</footer>
-</div>
+    <div class="container">
+      <div><a href="1pu.html" class="btn">1 PU</a></div>
+      <div><a href="2pu.html" class="btn">2 PU</a></div>
+      <div><a href="index.html" class="back-btn">Back</a></div> <!-- Back button -->
+    </div>
+
+    <div>
+      <footer>
+        <p>&copy; 2024 ProPhy</p>
+      </footer>
+    </div>
 </body>
+
 </html>

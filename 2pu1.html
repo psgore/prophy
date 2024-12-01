@@ -43,59 +43,65 @@
             background: transparent;
             /* Remove background */
         }
+
         header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    header .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
 
         header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    header nav ul li a:hover {
-      text-decoration: underline;
-    }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
         h1 {
-      margin-bottom: 2rem;
-      font-size: 2rem;
-      color: #fff; /* Text color */
-      text-align: center;
-      background-color: #007bff; /* Background color */
-      padding: 1rem; /* Padding for better spacing */
-      border-radius: 5px; /* Optional: rounded corners */
-    }
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #fff;
+            /* Text color */
+            text-align: center;
+            background-color: #007bff;
+            /* Background color */
+            padding: 1rem;
+            /* Padding for better spacing */
+            border-radius: 5px;
+            /* Optional: rounded corners */
+        }
 
-    footer {
-      background: #ffffff;
-      color: #000000;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+        footer {
+            background: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
 
-    footer a {
-      color: #007bff;
-      text-decoration: none;
-    }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
 
         .pdf-link {
             display: block;
@@ -192,48 +198,68 @@
             color: rgb(0, 0, 160);
             /* Changed to white */
         }
+
+        .white-link {
+            color: white;
+            text-decoration: none;
+            /* Removes underline */
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <h1>Pro Phy</h1>
-      </div>
-      <!-- Header Section -->
-      <header>
+        <h1><a href="index.html" class="white-link">Pro Phy</a></h1>
+    </div>
+    <!-- Header Section -->
+    <header>
         <nav>
-          <ul>
-        <li><a href="dash1.html">Board Exam Notes</a></li>
-        <li><a href="ytu.html">JEE NEET</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li><a href="aboutus.html">About Me</a></li>
-        <li><a href="contribution.html">Contribute</a></li>
-          </ul>
+            <ul>
+                <li><a href="dash1.html">Board Exam Notes</a></li>
+                <li><a href="ytu.html">JEE NEET</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="aboutus.html">About Me</a></li>
+                <li><a href="contribution.html">Contribute</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
     <header>
         <h2>2nd PU</h2>
     </header>
     <div class="content">
         <div class="search-section">
-            <input type="text" class="search-input" id="searchInput" placeholder="Search the Chapter" oninput="filterLinks()">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search the Chapter"
+                oninput="filterLinks()">
         </div>
 
         <h3 class="available-pdfs">Chapters:</h3>
         <a href="ytu.html" class="pdf-link" data-keywords="Electric Charges & Fields">Electric Charges & Fields</a>
-        <a href="https://drive.google.com/file/d/1QkUMGiC5nDpxRffDuFR632GwrPwxJxlZ/view?usp=drivesdk" class="pdf-link" data-keywords="Electrostatic Potential and Capacitance">Electrostatic Potential and Capacitance</a>
-        <a href="https://drive.google.com/file/d/1O-VIQ7NcU5rl_YVou-FqtoqJESbLoxaE/view?usp=drivesdk" class="pdf-link" data-keywords="Current Electricity">Current Electricity</a>
-        <a href="https://drive.google.com/file/d/1tCiLZyePrUAVTWTXRWzEw6X4PiEQsWt4/view?usp=drivesdk" class="pdf-link" data-keywords="Moving Charges and Magnetism">Moving Charges and Magnetism</a>
-        <a href="https://drive.google.com/file/d/1KWTNePizaEadNti9dCInzQyHglRDGxH1/view?usp=drivesdk" class="pdf-link" data-keywords="Magnetism and Matter">Magnetism and Matter</a>
-        <a href="https://drive.google.com/file/d/1JkK6gwjR3ibTCM0Esx9nAZ5PD6UJmaiS/view?usp=drivesdk" class="pdf-link" data-keywords="Electromagnetic Induction">Electromagnetic Induction</a>
-        <a href="https://drive.google.com/file/d/1IcTW6q1ZwG-otaPbFZCAt69IeYUFry7A/view?usp=drivesdk" class="pdf-link" data-keywords="Alternating Current">Alternating Current</a>
-        <a href="https://drive.google.com/file/d/1BUs1_aG36ZFitWa_UkKlUBKEdXiMR7yS/view?usp=drivesdk" class="pdf-link" data-keywords="Electromagnetic Waves">Electromagnetic Waves</a>
-        <a href="https://drive.google.com/file/d/1fFX-Ta77xzJmSjVk-L9IGD2PPiP38-lX/view?usp=drivesdk" class="pdf-link" data-keywords="Ray Optics and Optical Instruments">Ray Optics and Optical Instruments</a>
-        <a href="https://drive.google.com/file/d/1i8JcE5RkVrjzpHZu-92_RW07r6YG8gR4/view?usp=drivesdk" class="pdf-link" data-keywords="Wave Optics">Wave Optics</a>
-        <a href="https://drive.google.com/file/d/1u3s5Qw-XXmQLJLneybihH8aD1IFXsXMD/view?usp=drivesdk" class="pdf-link" data-keywords="Dual Nature of Radiation and Matter">Dual Nature of Radiation and Matter</a>
-        <a href="https://drive.google.com/file/d/1n4YFuEeRqSCoZr_oeFjJfr1kNtrv7WRm/view?usp=drivesdk" class="pdf-link" data-keywords="Atoms">Atoms</a>
-        <a href="https://drive.google.com/file/d/1U4CTjaf89vQWt_qeVI-fDJ23yS8ylp_N/view?usp=drivesdk" class="pdf-link" data-keywords="Nuclei">Nuclei</a>
-        <a href="https://drive.google.com/file/d/1IaaGOPgeRy_F7f7BKmg_h1bjQ2f2B2mE/view?usp=drivesdk" class="pdf-link" data-keywords="Semiconductor Electronics">Semiconductor Electronics</a>
+        <a href="https://drive.google.com/file/d/1QkUMGiC5nDpxRffDuFR632GwrPwxJxlZ/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Electrostatic Potential and Capacitance">Electrostatic Potential and Capacitance</a>
+        <a href="https://drive.google.com/file/d/1O-VIQ7NcU5rl_YVou-FqtoqJESbLoxaE/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Current Electricity">Current Electricity</a>
+        <a href="https://drive.google.com/file/d/1tCiLZyePrUAVTWTXRWzEw6X4PiEQsWt4/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Moving Charges and Magnetism">Moving Charges and Magnetism</a>
+        <a href="https://drive.google.com/file/d/1KWTNePizaEadNti9dCInzQyHglRDGxH1/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Magnetism and Matter">Magnetism and Matter</a>
+        <a href="https://drive.google.com/file/d/1JkK6gwjR3ibTCM0Esx9nAZ5PD6UJmaiS/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Electromagnetic Induction">Electromagnetic Induction</a>
+        <a href="https://drive.google.com/file/d/1IcTW6q1ZwG-otaPbFZCAt69IeYUFry7A/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Alternating Current">Alternating Current</a>
+        <a href="https://drive.google.com/file/d/1BUs1_aG36ZFitWa_UkKlUBKEdXiMR7yS/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Electromagnetic Waves">Electromagnetic Waves</a>
+        <a href="https://drive.google.com/file/d/1fFX-Ta77xzJmSjVk-L9IGD2PPiP38-lX/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Ray Optics and Optical Instruments">Ray Optics and Optical Instruments</a>
+        <a href="https://drive.google.com/file/d/1i8JcE5RkVrjzpHZu-92_RW07r6YG8gR4/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Wave Optics">Wave Optics</a>
+        <a href="https://drive.google.com/file/d/1u3s5Qw-XXmQLJLneybihH8aD1IFXsXMD/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Dual Nature of Radiation and Matter">Dual Nature of Radiation and Matter</a>
+        <a href="https://drive.google.com/file/d/1n4YFuEeRqSCoZr_oeFjJfr1kNtrv7WRm/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Atoms">Atoms</a>
+        <a href="https://drive.google.com/file/d/1U4CTjaf89vQWt_qeVI-fDJ23yS8ylp_N/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Nuclei">Nuclei</a>
+        <a href="https://drive.google.com/file/d/1IaaGOPgeRy_F7f7BKmg_h1bjQ2f2B2mE/view?usp=drivesdk" class="pdf-link"
+            data-keywords="Semiconductor Electronics">Semiconductor Electronics</a>
         <p class="explore-text">Feel free to explore these resources for a deeper understanding.
         </p>
 

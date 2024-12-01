@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,23 +97,31 @@
         .upi-link:hover {
             background-color: #0056b3;
         }
-        footer {
-      background: #ffffff;
-      color: #000000;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
 
-    footer a {
-      color: #007bff;
-      text-decoration: none;
-    }
+        footer {
+            background: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .white-link {
+            color: white;
+            text-decoration: none;
+            /* Removes underline */
+        }
     </style>
 </head>
+
 <body>
     <div>
-        <h1>Pro Phy</h1>
+        <h1><a href="index.html" class="white-link">Pro Phy</a></h1>
     </div>
     <!-- Header Section -->
     <header>
@@ -130,13 +139,14 @@
     <div class="content">
         <h2>contribute</h2>
         <a href="upi://pay?pa=9482499779@upi&pn=Goresuhas" target="_blank" class="upi-link">contribute via UPI</a>
-   
+
         <p class="qr-label">OR Scan the QR code to contribute:</p>
         <img src="qr.jpg" alt="QR Code for UPI Payment" height="400" width="400">
         <br>
-    </div>    
+    </div>
     <footer>
         <p>&copy; 2024 Pro Phy</p>
-        </footer>
+    </footer>
 </body>
+
 </html>
