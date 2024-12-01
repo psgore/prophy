@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd PU</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            /* Cover the entire area */
+            background-position: center;
+            /* Center the image */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            /* White text for contrast */
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            background: transparent;
+            /* Remove background */
+        }
+        header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+        header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+        h1 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #fff; /* Text color */
+      text-align: center;
+      background-color: #007bff; /* Background color */
+      padding: 1rem; /* Padding for better spacing */
+      border-radius: 5px; /* Optional: rounded corners */
+    }
+
+    footer {
+      background: #ffffff;
+      color: #000000;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+        .pdf-link {
+            display: block;
+            margin: 15px 0;
+            padding: 15px;
+            /* Increased padding for larger buttons */
+            background: linear-gradient(to right, #6dd5ed, #081174);
+            /* Gradient for links */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s, opacity 0.3s;
+            /* Animation effects */
+            width: 100%;
+            /* Set width to 100% */
+            max-width: 500px;
+            /* Increased max-width for PDF buttons */
+            margin-left: auto;
+            /* Center align */
+            margin-right: auto;
+            /* Center align */
+            font-size: 1.2em;
+            /* Increased font size for buttons */
+        }
+
+        .pdf-link:hover {
+            opacity: 0.8;
+            /* Slightly transparent on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
+        }
+
+        .search-section {
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            padding: 10px;
+            /* Decreased padding for smaller input */
+            width: 80%;
+            /* Adjust width as needed */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            /* Adjusted font size for search input */
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: linear-gradient(to right, #6dd5ed, #081174);
+            /* Same gradient as body */
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            transition: opacity 0.3s, transform 0.3s;
+            /* Animation effects */
+            width: 100%;
+            /* Set width to 100% */
+            max-width: 200px;
+            /* Max-width for the back button */
+            margin-left: auto;
+            /* Center align */
+            margin-right: auto;
+            /* Center align */
+            font-size: 0.9em;
+            /* Slightly smaller font size for back button */
+        }
+
+        .back-button:hover {
+            opacity: 0.8;
+            /* Slightly transparent on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
+        }
+
+        .available-pdfs {
+            font-size: 1.5em;
+            /* Adjust font size if needed */
+            margin: 20px 0;
+            /* Add some margin */
+            color: rgb(0, 0, 160);
+            /* Changed to white */
+        }
+
+        .explore-text {
+            font-size: 1em;
+            /* Adjust font size if needed */
+            margin-top: 10px;
+            /* Add some margin */
+            color: rgb(0, 0, 160);
+            /* Changed to white */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Pro Phy</h1>
+      </div>
+      <!-- Header Section -->
+      <header>
+        <nav>
+          <ul>
+        <li><a href="dash1.html">Board Exam Notes</a></li>
+        <li><a href="ytu.html">JEE NEET</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="aboutus.html">About Me</a></li>
+        <li><a href="contribution.html">Contribute</a></li>
+          </ul>
+        </nav>
+      </header>
+    <header>
+        <h2>2nd PU</h2>
+    </header>
+    <div class="content">
+        <div class="search-section">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search the Chapter" oninput="filterLinks()">
+        </div>
+
+        <h3 class="available-pdfs">Chapters:</h3>
+        <a href="ytu.html" class="pdf-link" data-keywords="Electric Charges & Fields">Electric Charges & Fields</a>
+        <a href="https://drive.google.com/file/d/1QkUMGiC5nDpxRffDuFR632GwrPwxJxlZ/view?usp=drivesdk" class="pdf-link" data-keywords="Electrostatic Potential and Capacitance">Electrostatic Potential and Capacitance</a>
+        <a href="https://drive.google.com/file/d/1O-VIQ7NcU5rl_YVou-FqtoqJESbLoxaE/view?usp=drivesdk" class="pdf-link" data-keywords="Current Electricity">Current Electricity</a>
+        <a href="https://drive.google.com/file/d/1tCiLZyePrUAVTWTXRWzEw6X4PiEQsWt4/view?usp=drivesdk" class="pdf-link" data-keywords="Moving Charges and Magnetism">Moving Charges and Magnetism</a>
+        <a href="https://drive.google.com/file/d/1KWTNePizaEadNti9dCInzQyHglRDGxH1/view?usp=drivesdk" class="pdf-link" data-keywords="Magnetism and Matter">Magnetism and Matter</a>
+        <a href="https://drive.google.com/file/d/1JkK6gwjR3ibTCM0Esx9nAZ5PD6UJmaiS/view?usp=drivesdk" class="pdf-link" data-keywords="Electromagnetic Induction">Electromagnetic Induction</a>
+        <a href="https://drive.google.com/file/d/1IcTW6q1ZwG-otaPbFZCAt69IeYUFry7A/view?usp=drivesdk" class="pdf-link" data-keywords="Alternating Current">Alternating Current</a>
+        <a href="https://drive.google.com/file/d/1BUs1_aG36ZFitWa_UkKlUBKEdXiMR7yS/view?usp=drivesdk" class="pdf-link" data-keywords="Electromagnetic Waves">Electromagnetic Waves</a>
+        <a href="https://drive.google.com/file/d/1fFX-Ta77xzJmSjVk-L9IGD2PPiP38-lX/view?usp=drivesdk" class="pdf-link" data-keywords="Ray Optics and Optical Instruments">Ray Optics and Optical Instruments</a>
+        <a href="https://drive.google.com/file/d/1i8JcE5RkVrjzpHZu-92_RW07r6YG8gR4/view?usp=drivesdk" class="pdf-link" data-keywords="Wave Optics">Wave Optics</a>
+        <a href="https://drive.google.com/file/d/1u3s5Qw-XXmQLJLneybihH8aD1IFXsXMD/view?usp=drivesdk" class="pdf-link" data-keywords="Dual Nature of Radiation and Matter">Dual Nature of Radiation and Matter</a>
+        <a href="https://drive.google.com/file/d/1n4YFuEeRqSCoZr_oeFjJfr1kNtrv7WRm/view?usp=drivesdk" class="pdf-link" data-keywords="Atoms">Atoms</a>
+        <a href="https://drive.google.com/file/d/1U4CTjaf89vQWt_qeVI-fDJ23yS8ylp_N/view?usp=drivesdk" class="pdf-link" data-keywords="Nuclei">Nuclei</a>
+        <a href="https://drive.google.com/file/d/1IaaGOPgeRy_F7f7BKmg_h1bjQ2f2B2mE/view?usp=drivesdk" class="pdf-link" data-keywords="Semiconductor Electronics">Semiconductor Electronics</a>
+        <p class="explore-text">Feel free to explore these resources for a deeper understanding.
+        </p>
+
+        <button class="back-button" onclick="goBack()">BACK</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 ProPhy</p>
+    </footer>
+
+    <script>
+        function filterLinks() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const links = document.querySelectorAll('.pdf-link');
+            links.forEach(link => {
+                const keywords = link.getAttribute('data-keywords') ? link.getAttribute('data-keywords').toLowerCase() : '';
+                link.style.display = keywords.includes(input) ? 'block' : 'none';
+            });
+        }
+
+        function goBack() {
+            window.location.href = 'dash1.html'; // Navigate back to index.html
+        }
+    </script>
+</body>
+
+</html>

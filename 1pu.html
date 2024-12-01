@@ -1,50 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st PU</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-size: cover;
-            /* Cover the entire area */
-            background-position: center;
-            /* Center the image */
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-            /* White text for contrast */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PU Physics Notes</title>
+  <style>
+    .back-button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        background: linear-gradient(to right, #6dd5ed, #081174);
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        transition: opacity 0.3s, transform 0.3s;
+        width: 100%;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9em;
+    }
 
-        header {
-            background: #222;
-            color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .back-button:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
+    header {
+        background: #222;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            text-align: left;
-            background: transparent;
-            /* Remove background */
-        }
+    header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
 
-        footer {
+    header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #fff; /* Text color */
+      text-align: center;
+      background-color: #007bff; /* Background color */
+      padding: 1rem; /* Padding for better spacing */
+      border-radius: 5px; /* Optional: rounded corners */
+    }
+
+    .btn, .back-btn {
+    display: block; /* Ensures block-level alignment */
+    margin: 1rem auto; /* Centers the button horizontally */
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    width: 200px; /* Button width */
+    text-align: center; /* Center the text inside the button */
+}
+
+.back-btn {
+    background: #6c757d; /* Different color for back button */
+}
+
+.btn:hover, .back-btn:hover {
+    background: #0056b3; /* Change hover color */
+}
+
+
+    .back-btn {
+      display: inline-block;
+      position:absolute ;
+      left: 10px;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background: #6c757d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+      width: 25px; /* Same width as other buttons */
+      height: vh;
+      text-align:center;
+    }
+    footer {
       background: #ffffff;
       color: #000000;
       text-align: center;
@@ -56,226 +120,40 @@
       color: #007bff;
       text-decoration: none;
     }
-
-        .pdf-link {
-            display: block;
-            margin: 15px 0;
-            padding: 15px;
-            /* Increased padding for larger buttons */
-            background: linear-gradient(to right, #6dd5ed, #081174);
-            /* Gradient for links */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
-            transition: transform 0.3s, opacity 0.3s;
-            /* Animation effects */
-            width: 100%;
-            /* Set width to 100% */
-            max-width: 500px;
-            /* Increased max-width for PDF buttons */
-            margin-left: auto;
-            /* Center align */
-            margin-right: auto;
-            /* Center align */
-            font-size: 1.2em;
-            /* Increased font size for buttons */
-        }
-
-        .pdf-link:hover {
-            opacity: 0.8;
-            /* Slightly transparent on hover */
-            transform: scale(1.05);
-            /* Slightly enlarge on hover */
-        }
-
-        .button-container button {
-            background-color: #333;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-            width: 400px;
-            /* Fixed width */
-        }
-
-        .button-container button:hover {
-            background-color: #555;
-        }
-
-        .search-section {
-            margin-bottom: 20px;
-        }
-
-        .search-input {
-            padding: 10px;
-            /* Decreased padding for smaller input */
-            width: 80%;
-            /* Adjust width as needed */
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1em;
-            /* Adjusted font size for search input */
-        }
-
-        .back-button {
-            margin-top: 20px;
-            padding: 10px 15px;
-            background: linear-gradient(to right, #6dd5ed, #081174);
-            /* Same gradient as body */
-            color: white;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-            transition: opacity 0.3s, transform 0.3s;
-            /* Animation effects */
-            width: 100%;
-            /* Set width to 100% */
-            max-width: 200px;
-            /* Max-width for the back button */
-            margin-left: auto;
-            /* Center align */
-            margin-right: auto;
-            /* Center align */
-            font-size: 0.9em;
-            /* Slightly smaller font size for back button */
-        }
-
-        .back-button:hover {
-            opacity: 0.8;
-            /* Slightly transparent on hover */
-            transform: scale(1.05);
-            /* Slightly enlarge on hover */
-        }
-
-        .available-pdfs {
-            font-size: 1.5em;
-            /* Adjust font size if needed */
-            margin: 20px 0;
-            /* Add some margin */
-            color: rgb(0, 0, 160);
-            /* Changed to white */
-        }
-        
-        header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .back-btn:hover {
+      background: #5a6268;
     }
-
-    header .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
-
-        header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    header nav ul li a:hover {
-      text-decoration: underline;
-    }
-        h1 {
-      margin-bottom: 2rem;
-      font-size: 2rem;
-      color: #fff; /* Text color */
-      text-align: center;
-      background-color: #007bff; /* Background color */
-      padding: 1rem; /* Padding for better spacing */
-      border-radius: 5px; /* Optional: rounded corners */
-    }
-
-        .explore-text {
-            font-size: 1em;
-            /* Adjust font size if needed */
-            margin-top: 10px;
-            /* Add some margin */
-            color: rgb(0, 0, 160);
-            /* Changed to white */
-        }
-    </style>
+  </style>
 </head>
-
 <body>
-    <div>
-        <h1>Pro Phy</h1>
-      </div>
-      <!-- Header Section -->
-      <header>
-        <nav>
-          <ul>
-            <li><a href="dash1.html">Board Exam Notes</a></li>
-            <li><a href="ytu.html">JEE NEET</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="aboutus.html">About Me</a></li>
-            <li><a href="contribution.html">Contribute</a></li>
-          </ul>
-        </nav>
-      </header>
-    <header>
-        <h2>1st PU</h2>
-    </header>
-    <div class="content">
-        <div class="search-section">
-            <input type="text" class="search-input" id="searchInput" placeholder="Search the Chapter"
-                oninput="filterLinks()">
-        </div>
+<div>
+  <div>
+    <h1>Pro Phy</h1>
+  </div>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="dash1.html">Board Exam Notes</a></li>
+        <li><a href="ytu.html">JEE NEET</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contribution.html">Contribute</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <h3 class="available-pdfs">Chapters:</h3>
-        <a href="ytu.html" class="pdf-link" data-keywords="Units and Measurements">Units and Measurements</a>
-        <a href="ytu.html" class="pdf-link" data-keywords=" Motion in a Straight Line"> Motion in a Straight Line</a>
-        <a href="ytu.html" class="pdf-link" data-keywords="Motion in a Plane">Motion in a Plane</a>
-        <a href="https://drive.google.com/file/d/1N2LKVZSsYb3hGf1KPeP5CnLCcLou7t1s/view?usp=drivesdk" class="pdf-link" data-keywords="Laws of Motion"> Laws of Motion</a>
-        <a href="https://drive.google.com/file/d/12RtJcJgCj_43_VuNXDF63ed_ivp9vYjV/view?usp=drivesdk" class="pdf-link" data-keywords="Work, Energy and Power">Work, Energy and Power</a>
-        <a href="https://drive.google.com/file/d/1Wn8AtOtNZuDUFU-pWTgB0aQuRx0QfDH0/view?usp=drivesdk" class="pdf-link" data-keywords="Systems of Particles and Rotational Motion">Systems of Particles and Rotational Motion</a>
-        <a href="https://drive.google.com/file/d/1AFU1jrvimEySDT0QjZS8K91EvTNdZa84/view?usp=drivesdk" class="pdf-link" data-keywords="Gravitation">Gravitation</a>
-        <a href="https://drive.google.com/file/d/1tpuVYhKGrvhPhfEt4oz1pqCvqZbjoDYT/view?usp=drivesdk" class="pdf-link" data-keywords="Mechanical Properties of Solids">Mechanical Properties of Solids</a>
-        <a href="https://drive.google.com/file/d/1hB3w9kcXrLf-k1qZ5Ob9gv1KxgYmu_sO/view?usp=drivesdk" class="pdf-link" data-keywords="Mechanical Properties of Fluids">Mechanical Properties of Fluids</a>
-        <a href="https://drive.google.com/file/d/1kSVULudZhewcuR5H3I0MasDbH4CVgzhL/view?usp=drivesdk" class="pdf-link" data-keywords="Thermal Properties of Matter">Thermal Properties of Matter</a>
-        <a href="https://drive.google.com/file/d/135atitNGI7XJttNu_ysewFmGgZH3aKXq/view?usp=drivesdk" class="pdf-link" data-keywords="Thermodynamics">Thermodynamics</a>
-        <a href="https://drive.google.com/file/d/19w64ueAUJTxUiKPfgFwZhob8g1KXYryh/view?usp=drivesdk" class="pdf-link" data-keywords="Kinetic Theory">Kinetic Theory</a>
-        <a href="https://drive.google.com/file/d/1v1CEpvAtQsANs6NshGy2bsCROttnIYUf/view?usp=drivesdk" class="pdf-link" data-keywords="Oscillations">Oscillations</a>
-        <a href="https://drive.google.com/file/d/1bPLdO1tX-VMC0U8HRWxP5D3A1QHWY19c/view?usp=drivesdk" class="pdf-link" data-keywords="Waves">Waves</a>
-        <p class="explore-text">Feel free to explore these resources for a deeper understanding.
-        </p>
 
-        <button class="back-button" onclick="goBack()">BACK</button>
-    </div>
-    <footer>
-        <p>&copy; 2024 ProPhy</p>
-    </footer>
-
-    <script>
-        function filterLinks() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const links = document.querySelectorAll('.pdf-link');
-            links.forEach(link => {
-                const keywords = link.getAttribute('data-keywords') ? link.getAttribute('data-keywords').toLowerCase() : '';
-                link.style.display = keywords.includes(input) ? 'block' : 'none';
-            });
-        }
-
-        function goBack() {
-            window.location.href = 'dash1.html'; // Navigate back to index.html
-        }
-    </script>
+  <div class="container">
+    <div><a href="1pu1.html" class="btn">1 PU Notes</a></div>
+    <div><a href="2pu.html" class="btn">1 PU Question Papers</a></div>
+    <div><a href="1pu.html" class="back-btn">Back</a></div> <!-- Back button -->
+  </div>
+  
+  <div>
+  <footer>
+    <p>&copy; 2024 ProPhy</p>
+</footer>
+</div>
 </body>
-
 </html>
