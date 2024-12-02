@@ -1,0 +1,8 @@
+ <!-- Footer -->
+  <footer id="contact">
+    <p>Contact Me at <a href="mailto:goresuhas644@gmail.com">goresuhas644@gmail.com</a></p>
+    <div class="footer-links">
+      <a href="contribution.html">Click here to Contribute</a> <!-- Contribution Link -->
+    </div>
+    <p>&copy; 2024 ProPhy</p>
+  </footer>
