@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<div id="header"></div>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    footer {
+      background: #ffffff;
+      color: #000000;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer-links {
+      margin-top: 1rem;
+    }
+
+    .footer-links a {
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #fff;
+      /* Text color */
+      text-align: center;
+      background-color: #007bff;
+      /* Background color */
+      padding: 1rem;
+      /* Padding for better spacing */
+      border-radius: 5px;
+      /* Optional: rounded corners */
+    }
+
+    .white-link {
+      color: white;
+      text-decoration: none;
+      /* Removes underline */
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1><a href="index.html" class="white-link">Pro Phy</a></h1>
+  </div>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="dash1.html">Board Exam Notes</a></li>
+        <li><a href="ytu.html">JEE NEET</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contribution.html">Contribute</a></li>
+      </ul>
+    </nav>
+  </header>
   <footer id="contact">
     <h2>Contact Me at</h2>
     <h2>Email @ <a href="mailto:goresuhas644@gmail.com">goresuhas644@gmail.com</a></h2>
