@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <div id="header"></div>
-<script>
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header').innerHTML = data);
-</script>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+      <header>
+        <h2>2nd PU</h2>
+    </header>
+    <div class="content">
+        
+
+        <h3 class="available-pdfs">Chapters:</h3>
+        <a href="jeesyl.html" class="pdf-link" data-keywords="JEE Syllabus">JEE Syllabus 2025</a>
+        
+        <p class="explore-text">Feel free to explore these resources for a deeper understanding.
+        </p>
+
+        <button class="back-button" onclick="goBack()">BACK</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 ProPhy</p>
+    </footer>
+
+    <script>
+        function filterLinks() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const links = document.querySelectorAll('.pdf-link');
+            links.forEach(link => {
+                const keywords = link.getAttribute('data-keywords') ? link.getAttribute('data-keywords').toLowerCase() : '';
+                link.style.display = keywords.includes(input) ? 'block' : 'none';
+            });
+        }
+
+        function goBack() {
+            window.location.href = 'dash1.html'; // Navigate back to index.html
+        }
+    </script>
+</body>
+<!--#include file="footer.html" -->
+</html>
 
 
     <div class="container">
