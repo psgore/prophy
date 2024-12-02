@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st PU</title>
+    <title>2nd PU</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -27,7 +28,7 @@
             align-items: center;
         }
 
-        h1 {
+        h2 {
             margin: 0;
             font-size: 2.5em;
         }
@@ -41,6 +42,52 @@
             text-align: left;
             background: transparent;
             /* Remove background */
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #fff;
+            /* Text color */
+            text-align: center;
+            background-color: #007bff;
+            /* Background color */
+            padding: 1rem;
+            /* Padding for better spacing */
+            border-radius: 5px;
+            /* Optional: rounded corners */
         }
 
         footer {
@@ -86,23 +133,6 @@
             /* Slightly transparent on hover */
             transform: scale(1.05);
             /* Slightly enlarge on hover */
-        }
-
-        .button-container button {
-            background-color: #333;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-            width: 400px;
-            /* Fixed width */
-        }
-
-        .button-container button:hover {
-            background-color: #555;
         }
 
         .search-section {
@@ -160,59 +190,6 @@
             /* Changed to white */
         }
 
-        header {
-            background: #222;
-            color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .white-link {
-            color: white;
-            text-decoration: none;
-            /* Removes underline */
-        }
-
-
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            color: #fff;
-            /* Text color */
-            text-align: center;
-            background-color: #007bff;
-            /* Background color */
-            padding: 1rem;
-            /* Padding for better spacing */
-            border-radius: 5px;
-            /* Optional: rounded corners */
-        }
-
         .explore-text {
             font-size: 1em;
             /* Adjust font size if needed */
@@ -221,39 +198,43 @@
             color: rgb(0, 0, 160);
             /* Changed to white */
         }
+
+        .white-link {
+            color: white;
+            text-decoration: none;
+            /* Removes underline */
+        }
     </style>
 </head>
 
 <body>
     <div>
         <h1><a href="index.html" class="white-link">Pro Phy</a></h1>
-
     </div>
     <!-- Header Section -->
     <header>
         <nav>
             <ul>
                 <li><a href="dash1.html">Board Exam Notes</a></li>
-                <li><a href="ytu.html">JEE NEET</a></li>
+                <li><a href="jeeneet.html">JEE NEET</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
                 <li><a href="aboutus.html">About Me</a></li>
                 <li><a href="contribution.html">Contribute</a></li>
             </ul>
         </nav>
     </header>
-    <header>
-    
     <div class="content">
-        
+        <div class="search-section">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search the Chapter"
+                oninput="filterLinks()">
+        </div>
 
-        <h3 class="available-pdfs">:</h3>
+        <h3 class="available-pdfs"></h3>
         <a href="jeesyl.html" class="pdf-link" data-keywords="JEE Syllabus">JEE Syllabus 2025</a>
         
         <p class="explore-text">Feel free to explore these resources for a deeper understanding.
         </p>
 
-        <button class="back-button" onclick="goBack()">BACK</button>
-    </div>
     <footer>
         <p>&copy; 2024 ProPhy</p>
     </footer>
@@ -273,5 +254,5 @@
         }
     </script>
 </body>
-<!--#include file="footer.html" -->
+
 </html>
