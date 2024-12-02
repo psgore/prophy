@@ -1,8 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<!include file="header.html">
-    <header>
+<div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+      <header>
         <h2>2nd PU</h2>
     </header>
     <div class="content">
