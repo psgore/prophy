@@ -1,0 +1,66 @@
+/* ============================================
+   Layout — Container, Sections, Grid
+   ============================================ */
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-3xl) var(--space-lg);
+}
+
+.section-alt {
+  background: var(--surface-alt);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto var(--space-2xl);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+/* --- Content card wrapper --- */
+.content {
+  max-width: var(--content);
+  margin: var(--space-2xl) auto;
+  padding: var(--space-2xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-align: left;
+}
+
+/* --- Card grid --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  justify-content: center;
+}
+
+/* --- Divider accent --- */
+.section-divider {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), #7c3aed);
+  border-radius: var(--r-pill);
+  margin: var(--space-md) auto 0;
+}
+
+@media (max-width: 768px) {
+  .section { padding: var(--space-2xl) var(--space-md); }
+  .content { margin: var(--space-md); padding: var(--space-lg); }
+  .card-grid { grid-template-columns: 1fr; }
+}

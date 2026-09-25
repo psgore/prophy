@@ -1,0 +1,78 @@
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--space-sm); }
+.mt-2 { margin-top: var(--space-md); }
+.mt-3 { margin-top: var(--space-lg); }
+.mt-4 { margin-top: var(--space-xl); }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--space-sm); }
+.mb-2 { margin-bottom: var(--space-md); }
+.mb-3 { margin-bottom: var(--space-lg); }
+.mb-4 { margin-bottom: var(--space-xl); }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.w-full { width: 100%; }
+
+/* --- Container widths --- */
+.container-narrow {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Grid overrides --- */
+.grid-2col {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* --- About subtitle --- */
+.about-role {
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: var(--space-lg);
+}
+
+/* --- QR image --- */
+.qr-image {
+  max-width: 280px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+/* --- Placeholder text --- */
+.placeholder-desc {
+  max-width: 400px;
+  margin: 12px auto 24px;
+}
+
+/* --- Content text wrapper --- */
+.text-wrapper {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}

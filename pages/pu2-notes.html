@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd PU Notes</title>
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/logo.png" alt="Pro Phy" class="nav-brand-icon">
+        <span class="nav-brand-text">Pro Phy</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="hamburger-toggle">
+      <label for="nav-toggle" class="hamburger-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="board-notes.html" class="active">Board Notes</a></li>
+          <li><a href="jee-neet.html">JEE &amp; NEET</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contribute.html" class="btn btn-primary btn-sm">Contribute</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="section-header animate-on-scroll">
+        <h2>2nd PU Physics Notes</h2>
+      </div>
+
+      <div class="search-section animate-on-scroll delay-1">
+        <label for="searchInput" class="sr-only">Search chapters</label>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search chapters..." oninput="filterLinks()">
+      </div>
+
+      <h3 class="available-pdfs animate-on-scroll delay-2">Chapters</h3>
+
+      <div class="animate-on-scroll delay-3">
+        <a href="coming-soon.html" class="pdf-link" data-keywords="Electric Charges & Fields">
+          <span class="pdf-link-number">1</span>
+          <span class="pdf-link-text">Electric Charges &amp; Fields</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1QkUMGiC5nDpxRffDuFR632GwrPwxJxlZ/view?usp=drivesdk" class="pdf-link" data-keywords="Electrostatic Potential and Capacitance">
+          <span class="pdf-link-number">2</span>
+          <span class="pdf-link-text">Electrostatic Potential and Capacitance</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1O-VIQ7NcU5rl_YVou-FqtoqJESbLoxaE/view?usp=drivesdk" class="pdf-link" data-keywords="Current Electricity">
+          <span class="pdf-link-number">3</span>
+          <span class="pdf-link-text">Current Electricity</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1tCiLZyePrUAVTWTXRWzEw6X4PiEQsWt4/view?usp=drivesdk" class="pdf-link" data-keywords="Moving Charges and Magnetism">
+          <span class="pdf-link-number">4</span>
+          <span class="pdf-link-text">Moving Charges and Magnetism</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1KWTNePizaEadNti9dCInzQyHglRDGxH1/view?usp=drivesdk" class="pdf-link" data-keywords="Magnetism and Matter">
+          <span class="pdf-link-number">5</span>
+          <span class="pdf-link-text">Magnetism and Matter</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1JkK6gwjR3ibTCM0Esx9nAZ5PD6UJmaiS/view?usp=drivesdk" class="pdf-link" data-keywords="Electromagnetic Induction">
+          <span class="pdf-link-number">6</span>
+          <span class="pdf-link-text">Electromagnetic Induction</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1IcTW6q1ZwG-otaPbFZCAt69IeYUFry7A/view?usp=drivesdk" class="pdf-link" data-keywords="Alternating Current">
+          <span class="pdf-link-number">7</span>
+          <span class="pdf-link-text">Alternating Current</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1BUs1_aG36ZFitWa_UkKlUBKEdXiMR7yS/view?usp=drivesdk" class="pdf-link" data-keywords="Electromagnetic Waves">
+          <span class="pdf-link-number">8</span>
+          <span class="pdf-link-text">Electromagnetic Waves</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1fFX-Ta77xzJmSjVk-L9IGD2PPiP38-lX/view?usp=drivesdk" class="pdf-link" data-keywords="Ray Optics and Optical Instruments">
+          <span class="pdf-link-number">9</span>
+          <span class="pdf-link-text">Ray Optics and Optical Instruments</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1i8JcE5RkVrjzpHZu-92_RW07r6YG8gR4/view?usp=drivesdk" class="pdf-link" data-keywords="Wave Optics">
+          <span class="pdf-link-number">10</span>
+          <span class="pdf-link-text">Wave Optics</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1u3s5Qw-XXmQLJLneybihH8aD1IFXsXMD/view?usp=drivesdk" class="pdf-link" data-keywords="Dual Nature of Radiation and Matter">
+          <span class="pdf-link-number">11</span>
+          <span class="pdf-link-text">Dual Nature of Radiation and Matter</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1n4YFuEeRqSCoZr_oeFjJfr1kNtrv7WRm/view?usp=drivesdk" class="pdf-link" data-keywords="Atoms">
+          <span class="pdf-link-number">12</span>
+          <span class="pdf-link-text">Atoms</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1U4CTjaf89vQWt_qeVI-fDJ23yS8ylp_N/view?usp=drivesdk" class="pdf-link" data-keywords="Nuclei">
+          <span class="pdf-link-number">13</span>
+          <span class="pdf-link-text">Nuclei</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1IaaGOPgeRy_F7f7BKmg_h1bjQ2f2B2mE/view?usp=drivesdk" class="pdf-link" data-keywords="Semiconductor Electronics">
+          <span class="pdf-link-number">14</span>
+          <span class="pdf-link-text">Semiconductor Electronics</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <p class="explore-text animate-on-scroll delay-4">Feel free to explore these resources for a deeper understanding.</p>
+
+      <div class="text-center mt-3 animate-on-scroll delay-5">
+        <button class="back-button" onclick="window.location.href='pu2.html'">&larr; Back</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024-2026 ProPhy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

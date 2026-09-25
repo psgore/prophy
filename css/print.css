@@ -1,0 +1,108 @@
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    min-height: auto;
+    display: block;
+  }
+
+  /* Hide non-print elements */
+  header,
+  footer,
+  .scroll-top,
+  .hero,
+  .hamburger-toggle,
+  .hamburger-label,
+  .search-section,
+  nav,
+  .hero-shapes,
+  .btn,
+  .back-btn,
+  .back-button {
+    display: none !important;
+  }
+
+  /* Show content */
+  .section {
+    padding: 0;
+    page-break-inside: avoid;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Links — show URL */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555 !important;
+    font-weight: normal;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: "";
+  }
+
+  /* Content cards */
+  .content,
+  .card,
+  .nav-card,
+  .syllabus-content {
+    border: 1px solid #ccc !important;
+    padding: 16px !important;
+    margin: 8px 0 !important;
+    page-break-inside: avoid;
+  }
+
+  /* PDF links */
+  .pdf-link {
+    border: 1px solid #ccc !important;
+    border-left: 3px solid #000 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+
+  /* No animations */
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Syllabus */
+  .syllabus-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Page margins */
+  @page {
+    margin: 2cm;
+  }
+}

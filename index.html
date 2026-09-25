@@ -7,61 +7,142 @@
   <title>Pro Phy - PU Physics Notes for JEE and NEET</title>
   <meta name="google-site-verification" content="JMpIiKnm-P_sa9PhrilVeMYqlM8Ocr4gOiZILw1OJxw">
   <meta name="description" content="Pro Phy - Physics Notes for PU Board Exams, JEE, and NEET preparation.">
-  <meta name="keywords"
-    content="Physics notes, PU notes, JEE, NEET, Pro Phy, PU Board exams, study material, Suhas Gore">
+  <meta name="keywords" content="Physics notes, PU notes, JEE, NEET, Pro Phy, PU Board exams, study material, Suhas Gore">
   <meta name="author" content="Suhas Gore">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Pro Phy - Physics Notes for PU Board Exams">
   <meta property="og:description" content="Get detailed physics notes for PU students and JEE/NEET preparation.">
   <meta property="og:image" content="https://psgore.github.io/prophy/og-image.jpg">
   <meta property="og:url" content="https://psgore.github.io/prophy/">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="site-title">
-    <h1><a href="index.html" class="white-link">Pro Phy</a></h1>
-  </div>
   <header>
-    <nav>
-      <ul>
-        <li><a href="board-notes.html">Board Exam Notes</a></li>
-        <li><a href="jee-neet.html">JEE NEET</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contribute.html">Contribute</a></li>
-      </ul>
-    </nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logo.png" alt="Pro Phy" class="nav-brand-icon">
+        <span class="nav-brand-text">Pro Phy</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="hamburger-toggle">
+      <label for="nav-toggle" class="hamburger-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="pages/board-notes.html">Board Notes</a></li>
+          <li><a href="pages/jee-neet.html">JEE &amp; NEET</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/contribute.html" class="btn btn-primary btn-sm">Contribute</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Ace Your Exams with Expert-Curated Physics Notes!</h2>
-    <p>Tailored for Board Exams, JEE, and NEET – All in One Place.</p>
-    <div class="cta-buttons">
-      <a href="board-notes.html" class="btn">Explore Board Notes</a>
-      <a href="jee.html" class="btn">Explore JEE Notes</a>
+    <div class="hero-shapes">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+      <div class="hero-shape hero-shape-4"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Free Physics Notes</div>
+      <h1>Ace Your Exams with Expert-Curated Physics Notes</h1>
+      <p>Tailored for Board Exams, JEE, and NEET preparation. Comprehensive notes, model papers, and syllabus — all in one place.</p>
+      <div class="hero-cta">
+        <a href="pages/board-notes.html" class="btn btn-primary">Explore Board Notes</a>
+        <a href="pages/jee.html" class="btn btn-secondary">Explore JEE Notes</a>
+      </div>
     </div>
   </section>
 
-  <section id="board-notes" class="notes-section">
-    <h2>Board Exam Notes</h2>
-    <p>Comprehensive and easy-to-understand notes covering the full syllabus.</p>
-    <a href="board-notes.html" class="btn">View Notes</a>
-  </section>
-
-  <section id="jee-notes" class="notes-section">
-    <h2>JEE / NEET</h2>
-    <p>Advanced notes with problem-solving strategies and shortcuts.</p>
-    <a href="jee-neet.html" class="btn">View Notes</a>
-  </section>
-
-  <footer id="contact">
-    <p>Contact Me at <a href="mailto:goresuhas644@gmail.com">goresuhas644@gmail.com</a></p>
-    <div class="footer-links">
-      <a href="contribute.html">Click here to Contribute</a>
+  <!-- Board Exam Notes Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Board Exam Notes</h2>
+        <p>Comprehensive and easy-to-understand notes covering the full PU syllabus for 1st and 2nd year.</p>
+      </div>
+      <div class="card-grid">
+        <a href="pages/board-notes.html" class="nav-card card-interactive animate-on-scroll delay-1">
+          <div class="nav-card-icon card-icon-blue">&#x1F4D6;</div>
+          <h3>1st PU Physics</h3>
+          <p>Units, Motion, Laws, Thermodynamics, Waves &amp; more</p>
+        </a>
+        <a href="pages/board-notes.html" class="nav-card card-interactive animate-on-scroll delay-2">
+          <div class="nav-card-icon card-icon-green">&#x1F4D6;</div>
+          <h3>2nd PU Physics</h3>
+          <p>Electrostatics, Magnetism, Optics, Modern Physics &amp; more</p>
+        </a>
+      </div>
     </div>
-    <p>&copy; 2024-2026 ProPhy</p>
+  </section>
+
+  <!-- JEE / NEET Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>JEE &amp; NEET Preparation</h2>
+        <p>Advanced notes with problem-solving strategies, shortcuts, and complete syllabus coverage.</p>
+      </div>
+      <div class="card-grid">
+        <a href="pages/jee.html" class="nav-card card-interactive animate-on-scroll delay-1">
+          <div class="nav-card-icon card-icon-purple">&#x1F393;</div>
+          <h3>JEE Main &amp; Advanced</h3>
+          <p>Complete syllabus, previous papers, and study material</p>
+        </a>
+        <a href="pages/neet.html" class="nav-card card-interactive animate-on-scroll delay-2">
+          <div class="nav-card-icon card-icon-orange">&#x1F52C;</div>
+          <h3>NEET Physics</h3>
+          <p>Physics-focused preparation for NEET aspirants</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-name">Pro Phy</a>
+          <p>Expert-curated physics notes for PU students, JEE, and NEET aspirants.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="pages/board-notes.html">Board Notes</a>
+            <a href="pages/jee.html">JEE Syllabus</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="mailto:goresuhas644@gmail.com">Email</a>
+            <a href="https://wa.me/9482499779" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://www.instagram.com/suhas_gore" rel="noopener noreferrer">Instagram</a>
+            <a href="pages/contribute.html">Contribute</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2024-2026 ProPhy. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

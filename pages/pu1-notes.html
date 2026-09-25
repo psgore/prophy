@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1st PU Notes</title>
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/images/logo.png" alt="Pro Phy" class="nav-brand-icon">
+        <span class="nav-brand-text">Pro Phy</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="hamburger-toggle">
+      <label for="nav-toggle" class="hamburger-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="board-notes.html" class="active">Board Notes</a></li>
+          <li><a href="jee-neet.html">JEE &amp; NEET</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contribute.html" class="btn btn-primary btn-sm">Contribute</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="section-header animate-on-scroll">
+        <h2>1st PU Physics Notes</h2>
+      </div>
+
+      <div class="search-section animate-on-scroll delay-1">
+        <label for="searchInput" class="sr-only">Search chapters</label>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search chapters..." oninput="filterLinks()">
+      </div>
+
+      <h3 class="available-pdfs animate-on-scroll delay-2">Chapters</h3>
+
+      <div class="animate-on-scroll delay-3">
+        <a href="coming-soon.html" class="pdf-link" data-keywords="Units and Measurements">
+          <span class="pdf-link-number">1</span>
+          <span class="pdf-link-text">Units and Measurements</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="coming-soon.html" class="pdf-link" data-keywords="Motion in a Straight Line">
+          <span class="pdf-link-number">2</span>
+          <span class="pdf-link-text">Motion in a Straight Line</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="coming-soon.html" class="pdf-link" data-keywords="Motion in a Plane">
+          <span class="pdf-link-number">3</span>
+          <span class="pdf-link-text">Motion in a Plane</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1N2LKVZSsYb3hGf1KPeP5CnLCcLou7t1s/view?usp=drivesdk" class="pdf-link" data-keywords="Laws of Motion">
+          <span class="pdf-link-number">4</span>
+          <span class="pdf-link-text">Laws of Motion</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/12RtJcJgCj_43_VuNXDF63ed_ivp9vYjV/view?usp=drivesdk" class="pdf-link" data-keywords="Work, Energy and Power">
+          <span class="pdf-link-number">5</span>
+          <span class="pdf-link-text">Work, Energy and Power</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1Wn8AtOtNZuDUFU-pWTgB0aQuRx0QfDH0/view?usp=drivesdk" class="pdf-link" data-keywords="Systems of Particles and Rotational Motion">
+          <span class="pdf-link-number">6</span>
+          <span class="pdf-link-text">Systems of Particles and Rotational Motion</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1AFU1jrvimEySDT0QjZS8K91EvTNdZa84/view?usp=drivesdk" class="pdf-link" data-keywords="Gravitation">
+          <span class="pdf-link-number">7</span>
+          <span class="pdf-link-text">Gravitation</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1tpuVYhKGrvhPhfEt4oz1pqCvqZbjoDYT/view?usp=drivesdk" class="pdf-link" data-keywords="Mechanical Properties of Solids">
+          <span class="pdf-link-number">8</span>
+          <span class="pdf-link-text">Mechanical Properties of Solids</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1hB3w9kcXrLf-k1qZ5Ob9gv1KxgYmu_sO/view?usp=drivesdk" class="pdf-link" data-keywords="Mechanical Properties of Fluids">
+          <span class="pdf-link-number">9</span>
+          <span class="pdf-link-text">Mechanical Properties of Fluids</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1kSVULudZhewcuR5H3I0MasDbH4CVgzhL/view?usp=drivesdk" class="pdf-link" data-keywords="Thermal Properties of Matter">
+          <span class="pdf-link-number">10</span>
+          <span class="pdf-link-text">Thermal Properties of Matter</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/135atitNGI7XJttNu_ysewFmGgZH3aKXq/view?usp=drivesdk" class="pdf-link" data-keywords="Thermodynamics">
+          <span class="pdf-link-number">11</span>
+          <span class="pdf-link-text">Thermodynamics</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/19w64ueAUJTxUiKPfgFwZhob8g1KXYryh/view?usp=drivesdk" class="pdf-link" data-keywords="Kinetic Theory">
+          <span class="pdf-link-number">12</span>
+          <span class="pdf-link-text">Kinetic Theory</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1v1CEpvAtQsANs6NshGy2bsCROttnIYUf/view?usp=drivesdk" class="pdf-link" data-keywords="Oscillations">
+          <span class="pdf-link-number">13</span>
+          <span class="pdf-link-text">Oscillations</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1bPLdO1tX-VMC0U8HRWxP5D3A1QHWY19c/view?usp=drivesdk" class="pdf-link" data-keywords="Waves">
+          <span class="pdf-link-number">14</span>
+          <span class="pdf-link-text">Waves</span>
+          <span class="pdf-link-arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <p class="explore-text animate-on-scroll delay-4">Feel free to explore these resources for a deeper understanding.</p>
+
+      <div class="text-center mt-3 animate-on-scroll delay-5">
+        <button class="back-button" onclick="window.location.href='pu1.html'">&larr; Back</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024-2026 ProPhy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

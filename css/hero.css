@@ -1,0 +1,160 @@
+/* ============================================
+   Hero Section — Animated Gradient + Shapes
+   ============================================ */
+
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #2563eb 100%);
+  padding: 100px var(--space-lg) 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Soft radial overlays */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: heroFloat 10s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: heroFloat 8s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+/* --- Floating shapes --- */
+.hero-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.06;
+}
+
+.hero-shape-1 {
+  width: 140px; height: 140px;
+  top: 12%; left: 8%;
+  animation: heroFloat 8s ease-in-out infinite;
+}
+
+.hero-shape-2 {
+  width: 90px; height: 90px;
+  top: 55%; right: 12%;
+  animation: heroFloat 6s ease-in-out infinite 1s;
+}
+
+.hero-shape-3 {
+  width: 65px; height: 65px;
+  bottom: 18%; left: 22%;
+  animation: heroFloat 10s ease-in-out infinite 2s;
+}
+
+.hero-shape-4 {
+  width: 45px; height: 45px;
+  top: 22%; right: 22%;
+  opacity: 0.1;
+  animation: heroFloat 7s ease-in-out infinite 0.5s;
+}
+
+.hero-shape-5 {
+  width: 30px; height: 30px;
+  top: 70%; left: 50%;
+  opacity: 0.08;
+  animation: heroFloat 9s ease-in-out infinite 3s;
+}
+
+/* --- Content --- */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: var(--r-pill);
+  margin-bottom: var(--space-lg);
+  border: 1px solid rgba(255,255,255,0.12);
+  letter-spacing: 0.02em;
+}
+
+.hero h1 {
+  color: white;
+  font-size: clamp(2.2rem, 5.5vw, 3.25rem);
+  font-weight: 800;
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.78);
+  font-size: 1.15rem;
+  max-width: 580px;
+  margin: 0 auto var(--space-xl);
+  line-height: 1.65;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 72px var(--space-md) 56px;
+    min-height: auto;
+  }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .hero-shape-1,
+  .hero-shape-2,
+  .hero-shape-3 { opacity: 0.04; }
+}
+
+@media (max-width: 480px) {
+  .hero-shape { display: none; }
+  .hero-cta { flex-direction: column; align-items: center; }
+  .hero-cta .btn { width: 100%; max-width: 280px; }
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-20px); }
+}
